@@ -13,7 +13,7 @@ export default function Header() {
           <ul className='flex gap-4'>
             <Link to='/'> <li>Home</li></Link>
             <Link to='/about'> <li>About</li></Link>
-            <Link to='/profile'> <li>Profile</li></Link>
+          
             <Link to='/signIn'> <li>SignIn</li></Link>
 
             </ul>  
