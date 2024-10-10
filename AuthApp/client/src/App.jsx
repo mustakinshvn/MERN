@@ -1,11 +1,20 @@
-import React from 'react'
+import {BrowserRouter , Routes, Route} from 'react-router-dom';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import Home from './pages/Home';
+import About from './pages/About';
+import Profile from './pages/Profile';
 
 export default function App() {
-  return (
-    <div className="p-10 bg-gray-200">
-      <h1 className="text-3xl font-bold text-center text-gray-800">
-        Hello, Tailwind CSS!
-      </h1>
-    </div>
-  )
+  return <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/signUp" element={<SignUp />} />
+      <Route path="/signIn" element={<SignIn />} />
+    </Routes>
+  
+  </BrowserRouter>
+
 }
